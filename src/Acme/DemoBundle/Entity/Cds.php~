@@ -1,0 +1,50 @@
+<?php
+
+namespace Acme\DemoBundle\Entity;
+
+use Symfony\Component\Validator\Constraints as Assert;
+
+use Doctrine\ORM\Mapping as ORM;
+
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="Cds")
+ *
+ */
+
+class Cds{
+
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+
+    /**
+     * @ORM\Column(type="string",length=100)
+     */
+    protected $name;
+
+
+    /**
+     * @ORM\Column(type="string",length=200)
+     */
+    protected $song;
+
+    /**
+     * @ORM\Column(type="string",length=300)
+     */
+    protected $story;
+
+
+    /**
+     * @ORM\Column(type="string",length=100)
+     */
+    protected $price;
+
+
+
+}

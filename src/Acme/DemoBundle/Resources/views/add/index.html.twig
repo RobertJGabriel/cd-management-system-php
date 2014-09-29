@@ -1,0 +1,31 @@
+{% extends "::base.html.twig" %}
+{% block title %} AcmeDemoBundle:Main:index{% endblock %}
+
+
+{% block header %}
+    <h1>Add Cd</h1>
+{% endblock %}
+
+{% block nav %}
+
+
+    <li> <a href="/update">update</a></li>
+    <li>  <a href="/add">add</a></li>
+    <li>  <a href="/delete">delete</a></li>
+    <li>  <a href="/view">view</a></li>
+
+
+
+
+{% endblock %}
+
+{% block body %}
+    {{ form_start(form,{attr:{novalidate:'novalidate'}}) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.song) }}
+    {{ form_row(form.story) }}
+    {{ form_row(form.price) }}
+
+    {{ form_end(form) }}
+
+{% endblock %}

@@ -1,0 +1,24 @@
+# app/config/routing.yml
+_welcome:
+    path:      /
+    defaults:  { _controller: AcmeDemoBundle:main:index }
+_viewCd:
+    resource: "@AcmeDemoBundle/Controller/viewController.php"
+    type:     annotation
+    prefix:   /view
+
+_addCd:
+    resource: "@AcmeDemoBundle/Controller/addController.php"
+    type:     annotation
+    prefix:   /add
+
+_deleteCd:
+    resource: "@AcmeDemoBundle/Controller/deleteController.php"
+    type:     annotation
+    prefix:   /delete
+
+_updateCd:
+    resource: "@AcmeDemoBundle/Controller/updateController.php"
+    type:     annotation
+    prefix:   /update
+
