@@ -1,0 +1,24 @@
+# app/config/routing.yml
+_welcome:
+    path:      /
+    defaults:  { _controller: assessmentOneBundle:main:index }
+_viewCd:
+    resource: "@assessmentOneBundle/Controller/viewController.php"
+    type:     annotation
+    prefix:   /view
+
+_addCd:
+    resource: "@assessmentOneBundle/Controller/addController.php"
+    type:     annotation
+    prefix:   /add
+
+_deleteCd:
+    resource: "@assessmentOneBundle/Controller/deleteController.php"
+    type:     annotation
+    prefix:   /delete
+
+_updateCd:
+    resource: "@assessmentOneBundle/Controller/updateController.php"
+    type:     annotation
+    prefix:   /update
+

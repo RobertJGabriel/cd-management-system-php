@@ -128,7 +128,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', '_welcome');
             }
 
-            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\mainController::indexAction',  '_route' => '_welcome',);
+            return array (  '_controller' => 'assessmentOne\\Bundle\\Controller\\mainController::indexAction',  '_route' => '_welcome',);
         }
 
         // _viewCd
@@ -137,7 +137,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', '_viewCd');
             }
 
-            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\viewController::indexAction',  '_route' => '_viewCd',);
+            return array (  '_controller' => 'assessmentOne\\Bundle\\Controller\\viewController::indexAction',  '_route' => '_viewCd',);
         }
 
         // _AddCd
@@ -146,7 +146,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', '_AddCd');
             }
 
-            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\addController::indexAction',  '_route' => '_AddCd',);
+            return array (  '_controller' => 'assessmentOne\\Bundle\\Controller\\addController::indexAction',  '_route' => '_AddCd',);
         }
 
         // _deleteCd
@@ -155,16 +155,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', '_deleteCd');
             }
 
-            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\deleteController::indexAction',  '_route' => '_deleteCd',);
+            return array (  '_controller' => 'assessmentOne\\Bundle\\Controller\\deleteController::indexAction',  '_route' => '_deleteCd',);
         }
 
-        // _mainCd
+        // _updateCd
         if (rtrim($pathinfo, '/') === '/update') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', '_mainCd');
+                return $this->redirect($pathinfo.'/', '_updateCd');
             }
 
-            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\updateController::indexAction',  '_route' => '_mainCd',);
+            return array (  '_controller' => 'assessmentOne\\Bundle\\Controller\\updateController::indexAction',  '_route' => '_updateCd',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

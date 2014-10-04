@@ -69,30 +69,30 @@ class __TwigTemplate_11cdb6435f785ae2c30ba6f4cf41fa2b2e640fdb7f938b8136239efdde3
         $context['_seq'] = twig_ensure_traversable((isset($context["id"]) ? $context["id"] : $this->getContext($context, "id")));
         foreach ($context['_seq'] as $context["_key"] => $context["new"]) {
             // line 25
-            echo "    <ul>
-      <li> Id : ";
+            echo "        <ul>
+            <li> Id : ";
             // line 26
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "id"), "html", null, true);
             echo "</li>
 
-    <li> Name : ";
+            <li> Name : ";
             // line 28
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "name"), "html", null, true);
             echo "</li>
-    <li>Song : ";
+            <li>Song : ";
             // line 29
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "song"), "html", null, true);
             echo "</li>
-    <li>Story : ";
+            <li>Story : ";
             // line 30
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "story"), "html", null, true);
             echo "</li>
 
-    <li>Price : ";
+            <li>Price : ";
             // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "price"), "html", null, true);
             echo "</li>
-    </ul>
+        </ul>
     ";
         }
         $_parent = $context['_parent'];

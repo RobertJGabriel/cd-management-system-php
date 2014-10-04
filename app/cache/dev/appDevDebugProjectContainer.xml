@@ -16,7 +16,7 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
+      <parameter key="assessmentOneBundle">assessmentOne\Bundle\assessmentOneBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -972,14 +972,6 @@
         <argument type="collection">
           <argument>assetic.request_listener</argument>
           <argument>onKernelRequest</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListenerService">
-        <argument>kernel.controller</argument>
-        <argument type="collection">
-          <argument>acme.demo.listener</argument>
-          <argument>onKernelController</argument>
         </argument>
         <argument>0</argument>
       </call>
@@ -2157,9 +2149,6 @@
         </argument>
       </call>
       <call method="addExtension">
-        <argument type="service" id="twig.extension.acme.demo"/>
-      </call>
-      <call method="addExtension">
         <argument type="service">
           <service class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
             <tag name="twig.extension"/>
@@ -2369,7 +2358,7 @@
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
             <argument type="collection">
-              <argument key="AcmeDemoBundle">Acme\DemoBundle\Entity</argument>
+              <argument key="assessmentOneBundle">assessmentOne\Bundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -2407,11 +2396,11 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/Applications/XAMPP/xamppfiles/htdocs/assessmentOne/src/Acme/DemoBundle/Entity</argument>
+                        <argument>/Applications/XAMPP/xamppfiles/htdocs/assessmentOne/src/assessmentOne/Bundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
-                  <argument>Acme\DemoBundle\Entity</argument>
+                  <argument>assessmentOne\Bundle\Entity</argument>
                 </call>
               </service>
             </argument>
@@ -2486,14 +2475,6 @@
       </argument>
       <argument type="service" id="security.authentication.trust_resolver" on-invalid="null"/>
       <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
-    </service>
-    <service id="twig.extension.acme.demo" class="Acme\DemoBundle\Twig\Extension\DemoExtension" public="false">
-      <tag name="twig.extension"/>
-      <argument type="service" id="twig.loader"/>
-    </service>
-    <service id="acme.demo.listener" class="Acme\DemoBundle\EventListener\ControllerListener">
-      <tag name="kernel.event_listener" event="kernel.controller" method="onKernelController"/>
-      <argument type="service" id="twig.extension.acme.demo"/>
     </service>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController">
       <argument type="service" id="router" on-invalid="null"/>
@@ -2826,8 +2807,8 @@
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Applications/XAMPP/xamppfiles/htdocs/assessmentOne/src/Acme/DemoBundle/Resources/views</argument>
-        <argument>AcmeDemo</argument>
+        <argument>/Applications/XAMPP/xamppfiles/htdocs/assessmentOne/src/assessmentOne/Bundle/Resources/views</argument>
+        <argument>assessmentOne</argument>
       </call>
       <call method="addPath">
         <argument>/Applications/XAMPP/xamppfiles/htdocs/assessmentOne/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

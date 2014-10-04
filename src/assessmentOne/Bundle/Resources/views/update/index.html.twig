@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+{% block title %}Update Cd{% endblock %}
+{% block header %}  <h1>Update Cd</h1>  {% endblock %}
+
+{% block nav %}
+
+    <li> <a href="/update">update</a></li>
+    <li>  <a href="/add">add</a></li>
+    <li>  <a href="/delete">delete</a></li>
+    <li>  <a href="/view">view</a></li>
+
+{% endblock %}
+
+{% block body %}
+
+
+    {{ form_start(form,{attr:{novalidate:'novalidate'}}) }}
+    {% for item in text %}
+        {{ form_row(form.name,{value :  item.name}) }}
+        {{ form_row(form.song,{value :  item.song}) }}
+        {{ form_row(form.story,{value :  item.story}) }}
+        {{ form_row(form.price,{value :  item.price} )}}
+        {{ form_end(form) }}
+    {% endfor %}
+{% endblock %}

@@ -1,2 +1,3 @@
-acme_website:
-    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+assessment_one:
+    resource: "@assessmentOneBundle/Resources/config/routing.yml"
+    prefix:   /
