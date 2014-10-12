@@ -1,0 +1,161 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+html,body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+#header{
+    padding: 0;
+    width: 100%;
+    background-color:#ff5722;
+    height: 200px;
+background-image: url(http://www.weebly.com/editor/uploads/6/0/3/3/603320/custom_themes/918726159630797610/files/download.png);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+#header>h1{
+    line-height: 200px;
+    padding: 0;
+    margin:0;
+    color: white;
+    text-align: center;
+
+}
+#nav{
+    width: 100%;
+    height: 50px;
+    background-color: #EAEAEA;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#menu{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 60px;
+
+}#menu>li{
+     line-height: 50px;
+     height: 60px;
+     float: left;
+     margin-left: 75px;
+ }
+#menu>li>a{
+    line-height: 50px;
+    font-size: 16px;
+
+}
+#menu>li>a{
+    text-decoration: none;
+}
+
+#wrapper{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+
+    height: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+#wrapper2{
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+min-height: 400px;
+height: auto;
+}
+#class{
+
+width: 200px;
+   height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
+
+#views{
+margin-top: 60px;
+width: 500px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+border-bottom: 1px solid #ebebeb;
+    margin-bottom: 60px;
+
+}
+#info{
+float: left;
+    width: 200px;
+    height: 400px;
+
+margin-top: -0px;
+}
+#info>li{
+
+    list-style: none;
+}
+
+#info>li{
+    margin-top: 30px;
+font-size: 1.5em;
+    width: 190px;
+
+    padding: 0;
+    height: 20px;
+    margin-bottom: 10px;
+
+}
+
+input[type=text]{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #DADADA;
+border-radius: 2px;
+}
+
+button[type=submit]{
+    margin-top: 20px;
+background-color: #3F51B5;
+    border: 1px solid #3F51B5;
+    border-radius: 3px;
+    height: 50px;
+    width: 200px;
+    color: white;
+
+}
+
+button[type=submit]:hover{
+
+background-color: #0091EA;
+cursor: pointer;
+}
+
+
+#cover{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+float: left;
+
+}
