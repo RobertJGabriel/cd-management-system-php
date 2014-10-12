@@ -22,14 +22,18 @@
 {% block body %}
 
     {% for new in id %}
-        <ul>
-            <li> Id : {{ new.id}}</li>
+        <div id="views">
+        <img id="cover"src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/128/CD.png" width="200px" height="200px">
+        <ul id="info">
 
-            <li> Name : {{ new.name}}</li>
-            <li>Song : {{ new.song}}</li>
-            <li>Story : {{ new.story}}</li>
+            <li id="id"> Id : {{ new.id}}</li>
 
-            <li>Price : {{ new.price}}</li>
+            <li id="name"> Name : {{ new.name}}</li>
+            <li id="song">Song : {{ new.song}}</li>
+            <li id=story"">Story : {{ new.story}}</li>
+
+            <li id="price">Price : &#8364; {{ new.price}}</li>
         </ul>
+        </div>
     {% endfor %}
 {% endblock %}

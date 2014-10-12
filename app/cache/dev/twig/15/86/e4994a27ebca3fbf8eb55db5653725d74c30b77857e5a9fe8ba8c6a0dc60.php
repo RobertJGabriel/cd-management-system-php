@@ -30,72 +30,63 @@ class __TwigTemplate_1586e4994a27ebca3fbf8eb55db5653725d74c30b77857e5a9fe8ba8c6a
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        echo "  assessmentOneBundle:Main:index";
+        echo "Update Cd";
+    }
+
+    // line 3
+    public function block_header($context, array $blocks = array())
+    {
+        echo "  <h1>Update Cd</h1>  ";
     }
 
     // line 5
-    public function block_header($context, array $blocks = array())
-    {
-        // line 6
-        echo "    <h1>Update Cd</h1>
-";
-    }
-
-    // line 9
     public function block_nav($context, array $blocks = array())
     {
-        // line 10
+        // line 6
         echo "
-
     <li> <a href=\"/update\">update</a></li>
     <li>  <a href=\"/add\">add</a></li>
     <li>  <a href=\"/delete\">delete</a></li>
     <li>  <a href=\"/view\">view</a></li>
 
-
-
-
 ";
     }
 
-    // line 22
+    // line 14
     public function block_body($context, array $blocks = array())
     {
-        // line 23
+        // line 15
         echo "
 
     ";
-        // line 25
+        // line 17
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("novalidate" => "novalidate")));
         echo "
     ";
-        // line 26
+        // line 18
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["text"]) ? $context["text"] : $this->getContext($context, "text")));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 27
+            // line 19
             echo "        ";
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "name"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "name")));
             echo "
         ";
-            // line 28
+            // line 20
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "song"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "song")));
             echo "
         ";
-            // line 29
+            // line 21
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "story"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "story")));
             echo "
         ";
-            // line 30
+            // line 22
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "price"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "price")));
             echo "
-
         ";
-            // line 32
+            // line 23
             echo             $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
             echo "
-
-
     ";
         }
         $_parent = $context['_parent'];
@@ -115,6 +106,6 @@ class __TwigTemplate_1586e4994a27ebca3fbf8eb55db5653725d74c30b77857e5a9fe8ba8c6a
 
     public function getDebugInfo()
     {
-        return array (  95 => 32,  90 => 30,  86 => 29,  82 => 28,  77 => 27,  73 => 26,  69 => 25,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
+        return array (  88 => 23,  84 => 22,  80 => 21,  76 => 20,  71 => 19,  67 => 18,  63 => 17,  59 => 15,  56 => 14,  46 => 6,  43 => 5,  37 => 3,  31 => 2,);
     }
 }

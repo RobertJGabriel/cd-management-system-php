@@ -53,14 +53,14 @@ class __TwigTemplate_977e29226aa307681edbb054fe9e8708ae2d0e908f793bfd46f9bc078de
         echo "</ul> </div>
 
 
-    <ul id=\"views\">
-        <li>
+    <div id=\"wrapper2\">
+
         ";
         // line 20
         $this->displayBlock('body', $context, $blocks);
         // line 33
-        echo "        </li>
-    </ul>
+        echo "
+    </div>
 
 ";
         // line 36

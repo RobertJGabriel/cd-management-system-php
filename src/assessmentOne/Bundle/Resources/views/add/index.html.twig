@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block body %}
-    {{ form_start(form,{attr:{novalidate:'novalidate'}}) }}
+    {{ form_start(form) }}
     {{ form_row(form.name, { 'attr': {'placeholder':'Artist Name'} }) }}
     {{ form_row(form.song, { 'attr': {'placeholder': 'Song Name'} }) }}
     {{ form_row(form.story ,{ 'attr': {'placeholder':' Song Description'} }) }}

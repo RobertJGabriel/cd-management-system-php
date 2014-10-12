@@ -63,7 +63,7 @@ class __TwigTemplate_abef493a201c2d84557e939fa2ab1f642910a1b76a6e06e6e445eb87be1
     {
         // line 23
         echo "    ";
-        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("novalidate" => "novalidate")));
+        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
     ";
         // line 24

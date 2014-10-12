@@ -69,30 +69,34 @@ class __TwigTemplate_42ec5cb7c22dfb1c48870580d5e0ad8c4a2892fb380ff9944caf9872750
         $context['_seq'] = twig_ensure_traversable((isset($context["id"]) ? $context["id"] : $this->getContext($context, "id")));
         foreach ($context['_seq'] as $context["_key"] => $context["new"]) {
             // line 25
-            echo "        <ul>
-            <li> Id : ";
-            // line 26
+            echo "        <div id=\"views\">
+        <img id=\"cover\"src=\"https://cdn2.iconfinder.com/data/icons/metro-ui-dock/128/CD.png\" width=\"200px\" height=\"200px\">
+        <ul id=\"info\">
+
+            <li id=\"id\"> Id : ";
+            // line 29
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "id"), "html", null, true);
             echo "</li>
 
-            <li> Name : ";
-            // line 28
+            <li id=\"name\"> Name : ";
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "name"), "html", null, true);
             echo "</li>
-            <li>Song : ";
-            // line 29
+            <li id=\"song\">Song : ";
+            // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "song"), "html", null, true);
             echo "</li>
-            <li>Story : ";
-            // line 30
+            <li id=story\"\">Story : ";
+            // line 33
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "story"), "html", null, true);
             echo "</li>
 
-            <li>Price : ";
-            // line 32
+            <li id=\"price\">Price : &#8364; ";
+            // line 35
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "price"), "html", null, true);
             echo "</li>
         </ul>
+        </div>
     ";
         }
         $_parent = $context['_parent'];
@@ -112,6 +116,6 @@ class __TwigTemplate_42ec5cb7c22dfb1c48870580d5e0ad8c4a2892fb380ff9944caf9872750
 
     public function getDebugInfo()
     {
-        return array (  93 => 32,  88 => 30,  84 => 29,  80 => 28,  75 => 26,  72 => 25,  68 => 24,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
+        return array (  96 => 35,  91 => 33,  87 => 32,  83 => 31,  78 => 29,  72 => 25,  68 => 24,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
     }
 }

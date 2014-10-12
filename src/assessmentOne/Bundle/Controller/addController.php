@@ -41,7 +41,6 @@ class addController extends Controller
                 $em->flush();
                 return $this->render('assessmentOneBundle:conformation:index.html.twig',array('text'=>'Cd added'));
 
-                //   return new Response( 'Cd Created');
             }
             return $this->render('assessmentOneBundle:add:index.html.twig', array('form'=>$forms->createView()));
 
