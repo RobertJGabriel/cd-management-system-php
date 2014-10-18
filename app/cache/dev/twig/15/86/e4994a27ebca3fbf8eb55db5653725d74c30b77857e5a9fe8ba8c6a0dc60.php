@@ -11,8 +11,8 @@ class __TwigTemplate_1586e4994a27ebca3fbf8eb55db5653725d74c30b77857e5a9fe8ba8c6a
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'header' => array($this, 'block_header'),
             'nav' => array($this, 'block_nav'),
+            'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -33,58 +33,62 @@ class __TwigTemplate_1586e4994a27ebca3fbf8eb55db5653725d74c30b77857e5a9fe8ba8c6a
         echo "Update Cd";
     }
 
-    // line 3
-    public function block_header($context, array $blocks = array())
-    {
-        echo "  <h1>Update Cd</h1>  ";
-    }
-
-    // line 5
+    // line 4
     public function block_nav($context, array $blocks = array())
     {
-        // line 6
+        // line 5
         echo "
+
+    <li><img src=\"https://cdn3.iconfinder.com/data/icons/ballicons-free/128/speakers.png\" width=\"50px\" height=\"50px\"></li>
     <li> <a href=\"/update\">update</a></li>
     <li>  <a href=\"/add\">add</a></li>
     <li>  <a href=\"/delete\">delete</a></li>
     <li>  <a href=\"/view\">view</a></li>
 
+
+
 ";
     }
 
-    // line 14
+    // line 16
+    public function block_header($context, array $blocks = array())
+    {
+        echo "  <h1>Update Cd</h1>  ";
+    }
+
+    // line 18
     public function block_body($context, array $blocks = array())
     {
-        // line 15
+        // line 19
         echo "
 
     ";
-        // line 17
+        // line 21
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("novalidate" => "novalidate")));
         echo "
     ";
-        // line 18
+        // line 22
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["text"]) ? $context["text"] : $this->getContext($context, "text")));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 19
+            // line 23
             echo "        ";
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "name"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "name")));
             echo "
         ";
-            // line 20
+            // line 24
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "song"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "song")));
             echo "
         ";
-            // line 21
+            // line 25
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "story"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "story")));
             echo "
         ";
-            // line 22
+            // line 26
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "price"), 'row', array("value" => $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "price")));
             echo "
         ";
-            // line 23
+            // line 27
             echo             $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
             echo "
     ";
@@ -106,6 +110,6 @@ class __TwigTemplate_1586e4994a27ebca3fbf8eb55db5653725d74c30b77857e5a9fe8ba8c6a
 
     public function getDebugInfo()
     {
-        return array (  88 => 23,  84 => 22,  80 => 21,  76 => 20,  71 => 19,  67 => 18,  63 => 17,  59 => 15,  56 => 14,  46 => 6,  43 => 5,  37 => 3,  31 => 2,);
+        return array (  92 => 27,  88 => 26,  84 => 25,  80 => 24,  75 => 23,  71 => 22,  67 => 21,  63 => 19,  60 => 18,  54 => 16,  40 => 5,  37 => 4,  31 => 2,);
     }
 }

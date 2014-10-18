@@ -11,8 +11,8 @@ class __TwigTemplate_e922a914c7d17c3da18ca274345376ffbf98e30dbf8211289b6cf74e40f
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'header' => array($this, 'block_header'),
             'nav' => array($this, 'block_nav'),
+            'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -33,24 +33,19 @@ class __TwigTemplate_e922a914c7d17c3da18ca274345376ffbf98e30dbf8211289b6cf74e40f
         echo "Delete Cd";
     }
 
-    // line 5
-    public function block_header($context, array $blocks = array())
-    {
-        // line 6
-        echo "    <h1> Delete Cd</h1>
-";
-    }
-
-    // line 9
+    // line 7
     public function block_nav($context, array $blocks = array())
     {
-        // line 10
+        // line 8
         echo "
 
-    <li><a href=\"/update\">update</a></li>
-    <li><a href=\"/add\">add</a></li>
-    <li><a href=\"/delete\">delete</a></li>
-    <li><a href=\"/view\">view</a></li>
+    <li><img src=\"https://cdn3.iconfinder.com/data/icons/ballicons-free/128/speakers.png\" width=\"50px\" height=\"50px\"></li>
+    <li> <a href=\"/update\">update</a></li>
+    <li>  <a href=\"/add\">add</a></li>
+    <li>  <a href=\"/delete\">delete</a></li>
+    <li>  <a href=\"/view\">view</a></li>
+
+
 
 
 
@@ -59,23 +54,31 @@ class __TwigTemplate_e922a914c7d17c3da18ca274345376ffbf98e30dbf8211289b6cf74e40f
     }
 
     // line 22
-    public function block_body($context, array $blocks = array())
+    public function block_header($context, array $blocks = array())
     {
         // line 23
+        echo "    <h1> Delete Cd</h1>
+";
+    }
+
+    // line 25
+    public function block_body($context, array $blocks = array())
+    {
+        // line 26
         echo "
 
     ";
-        // line 25
+        // line 28
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
     ";
-        // line 26
+        // line 29
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "Id"), 'row', array("attr" => array("placeholder" => "Delete by Id")));
         echo "
 
 
     ";
-        // line 29
+        // line 32
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 ";
@@ -93,6 +96,6 @@ class __TwigTemplate_e922a914c7d17c3da18ca274345376ffbf98e30dbf8211289b6cf74e40f
 
     public function getDebugInfo()
     {
-        return array (  79 => 29,  73 => 26,  69 => 25,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
+        return array (  82 => 32,  76 => 29,  72 => 28,  68 => 26,  65 => 25,  60 => 23,  57 => 22,  40 => 8,  37 => 7,  31 => 2,);
     }
 }

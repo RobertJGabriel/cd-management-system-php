@@ -10,13 +10,20 @@
 
 </head>
 <body>
-<div id="header">   {% block header %} {% endblock %} </div>
+
 
 <div id="nav"><ul id="menu">{% block nav %} {% endblock %}</ul> </div>
 
-
+<div id="header">   {% block header %} {% endblock %} </div>
     <div id="wrapper2">
-
+        <table style="width:100%">
+            <tr>
+                <th>ID</th>
+                <th>Artist</th>
+                <th>Song</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
         {% block body %}
 
 
@@ -30,7 +37,7 @@
 
 
         {% endblock %}
-
+</table>
     </div>
 
 {% block javascripts %}{% endblock %}

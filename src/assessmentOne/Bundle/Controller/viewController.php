@@ -26,7 +26,7 @@ class viewController extends Controller
             ->findAll();
 
         if (!$product) {
-            return $this->render('assessmentOneBundle:conformation:conformation.html.twig',array('text'=>'No Cds'));
+            return $this->render('assessmentOneBundle:conformation:index.html.twig',array('text'=>'No Cds'));
 
         }else {
 

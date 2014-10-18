@@ -11,8 +11,8 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'header' => array($this, 'block_header'),
             'nav' => array($this, 'block_nav'),
+            'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -33,22 +33,18 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
         echo " Welcome";
     }
 
-    // line 4
-    public function block_header($context, array $blocks = array())
-    {
-        // line 5
-        echo "       <h1>Welcome Admin</h1>
-   ";
-    }
-
-    // line 7
+    // line 5
     public function block_nav($context, array $blocks = array())
     {
-        // line 8
+        // line 6
         echo "
 
-    <li>  <a href=\"/add\">Admin</a></li>
 
+    <li><img src=\"https://cdn3.iconfinder.com/data/icons/ballicons-free/128/speakers.png\" width=\"50px\" height=\"50px\"></li>
+    <li> <a href=\"/update\">update</a></li>
+    <li>  <a href=\"/add\">add</a></li>
+    <li>  <a href=\"/delete\">delete</a></li>
+    <li>  <a href=\"/view\">view</a></li>
 
 
 
@@ -56,10 +52,18 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
 ";
     }
 
-    // line 18
+    // line 19
+    public function block_header($context, array $blocks = array())
+    {
+        // line 20
+        echo "       <h1>Welcome Admin</h1>
+   ";
+    }
+
+    // line 22
     public function block_body($context, array $blocks = array())
     {
-        // line 19
+        // line 23
         echo "
     <p>Hi , This is the first time you can add delete and update cds to the database.</p>
 
@@ -81,6 +85,6 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
 
     public function getDebugInfo()
     {
-        return array (  63 => 19,  60 => 18,  48 => 8,  45 => 7,  40 => 5,  37 => 4,  31 => 3,);
+        return array (  67 => 23,  64 => 22,  59 => 20,  56 => 19,  40 => 6,  37 => 5,  31 => 3,);
     }
 }

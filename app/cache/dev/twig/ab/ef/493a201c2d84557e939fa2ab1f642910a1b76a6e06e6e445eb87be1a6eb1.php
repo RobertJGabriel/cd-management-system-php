@@ -11,8 +11,8 @@ class __TwigTemplate_abef493a201c2d84557e939fa2ab1f642910a1b76a6e06e6e445eb87be1
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'header' => array($this, 'block_header'),
             'nav' => array($this, 'block_nav'),
+            'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -33,20 +33,14 @@ class __TwigTemplate_abef493a201c2d84557e939fa2ab1f642910a1b76a6e06e6e445eb87be1
         echo "Add A Cd";
     }
 
-    // line 5
-    public function block_header($context, array $blocks = array())
-    {
-        // line 6
-        echo "    <h1>Add Cd</h1>
-";
-    }
-
-    // line 9
+    // line 6
     public function block_nav($context, array $blocks = array())
     {
-        // line 10
+        // line 7
         echo "
 
+
+    <li><img src=\"https://cdn3.iconfinder.com/data/icons/ballicons-free/128/speakers.png\" width=\"50px\" height=\"50px\"></li>
     <li> <a href=\"/update\">update</a></li>
     <li>  <a href=\"/add\">add</a></li>
     <li>  <a href=\"/delete\">delete</a></li>
@@ -54,36 +48,43 @@ class __TwigTemplate_abef493a201c2d84557e939fa2ab1f642910a1b76a6e06e6e445eb87be1
 
 
 
-
 ";
     }
 
-    // line 22
+    // line 19
+    public function block_header($context, array $blocks = array())
+    {
+        // line 20
+        echo "    <h1>Add Cd</h1>
+";
+    }
+
+    // line 23
     public function block_body($context, array $blocks = array())
     {
-        // line 23
+        // line 24
         echo "    ";
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
     ";
-        // line 24
+        // line 25
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "name"), 'row', array("attr" => array("placeholder" => "Artist Name")));
         echo "
     ";
-        // line 25
+        // line 26
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "song"), 'row', array("attr" => array("placeholder" => "Song Name")));
         echo "
     ";
-        // line 26
+        // line 27
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "story"), 'row', array("attr" => array("placeholder" => " Song Description")));
         echo "
     ";
-        // line 27
+        // line 28
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "price"), 'row', array("attr" => array("placeholder" => " Cd Cost")));
         echo "
 
     ";
-        // line 29
+        // line 30
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 
@@ -102,6 +103,6 @@ class __TwigTemplate_abef493a201c2d84557e939fa2ab1f642910a1b76a6e06e6e445eb87be1
 
     public function getDebugInfo()
     {
-        return array (  87 => 29,  82 => 27,  78 => 26,  74 => 25,  70 => 24,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
+        return array (  88 => 30,  83 => 28,  79 => 27,  75 => 26,  71 => 25,  66 => 24,  63 => 23,  58 => 20,  55 => 19,  40 => 7,  37 => 6,  31 => 2,);
     }
 }

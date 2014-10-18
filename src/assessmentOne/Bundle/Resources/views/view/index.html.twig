@@ -8,7 +8,7 @@
 
 {% block nav %}
 
-
+<li><img src="https://cdn3.iconfinder.com/data/icons/ballicons-free/128/speakers.png" width="50px" height="50px"></li>
     <li> <a href="/update">update</a></li>
     <li>  <a href="/add">add</a></li>
     <li>  <a href="/delete">delete</a></li>
@@ -21,19 +21,20 @@
 
 {% block body %}
 
+
     {% for new in id %}
-        <div id="views">
-        <img id="cover"src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/128/CD.png" width="200px" height="200px">
-        <ul id="info">
+        <tr>
 
-            <li id="id"> Id : {{ new.id}}</li>
+            <td>{{ new.id}}</td>
 
-            <li id="name"> Name : {{ new.name}}</li>
-            <li id="song">Song : {{ new.song}}</li>
-            <li id=story"">Story : {{ new.story}}</li>
+            <td>{{ new.name}}</td>
+            <td>{{ new.song}}</td>
+            <td>{{ new.story}}</td>
 
-            <li id="price">Price : &#8364; {{ new.price}}</li>
-        </ul>
-        </div>
+            <td>&#8364; {{ new.price}}</td>
+        </tr>
+
     {% endfor %}
+
+
 {% endblock %}

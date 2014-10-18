@@ -11,8 +11,8 @@ class __TwigTemplate_18fc026641e18ee2ea5822f2c060ab629f0b6b43dccb38621322f79018a
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'header' => array($this, 'block_header'),
             'nav' => array($this, 'block_nav'),
+            'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
         );
@@ -42,17 +42,17 @@ class __TwigTemplate_18fc026641e18ee2ea5822f2c060ab629f0b6b43dccb38621322f79018a
 
     </head>
     <body>
-    <div id=\"header\">   ";
-        // line 13
-        $this->displayBlock('header', $context, $blocks);
-        echo " </div>
+
 
 <div id=\"nav\"><ul id=\"menu\">";
         // line 15
         $this->displayBlock('nav', $context, $blocks);
         echo "</ul> </div>
+<div id=\"header\">   ";
+        // line 16
+        $this->displayBlock('header', $context, $blocks);
+        echo " </div>
 
-    <div id=\"wrapper\">
         <div id=\"class\">
         ";
         // line 19
@@ -60,7 +60,7 @@ class __TwigTemplate_18fc026641e18ee2ea5822f2c060ab629f0b6b43dccb38621322f79018a
         // line 32
         echo "
         </div>
-    </div>
+
         ";
         // line 35
         $this->displayBlock('javascripts', $context, $blocks);
@@ -76,14 +76,14 @@ class __TwigTemplate_18fc026641e18ee2ea5822f2c060ab629f0b6b43dccb38621322f79018a
         echo "Welcome!";
     }
 
-    // line 13
-    public function block_header($context, array $blocks = array())
+    // line 15
+    public function block_nav($context, array $blocks = array())
     {
         echo " ";
     }
 
-    // line 15
-    public function block_nav($context, array $blocks = array())
+    // line 16
+    public function block_header($context, array $blocks = array())
     {
         echo " ";
     }
@@ -123,6 +123,6 @@ class __TwigTemplate_18fc026641e18ee2ea5822f2c060ab629f0b6b43dccb38621322f79018a
 
     public function getDebugInfo()
     {
-        return array (  110 => 35,  95 => 20,  92 => 19,  86 => 15,  80 => 13,  74 => 5,  68 => 36,  66 => 35,  61 => 32,  59 => 19,  52 => 15,  47 => 13,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  110 => 35,  95 => 20,  92 => 19,  86 => 16,  80 => 15,  74 => 5,  68 => 36,  66 => 35,  61 => 32,  59 => 19,  53 => 16,  49 => 15,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
     }
 }

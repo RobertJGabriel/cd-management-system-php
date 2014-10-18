@@ -43,7 +43,7 @@ class deleteController extends Controller
                 $em->remove($product);
                 $em->flush();
 
-                return $this->render('assessmentOneBundle:conformation:index.html.twig',array('text'=>'All Deleted'));
+                return $this->render('assessmentOneBundle:conformation:index.html.twig',array('text'=>'Cd deleted'));
 
             }
 

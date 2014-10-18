@@ -57,7 +57,7 @@ class updateController extends Controller
                         $product->setStory($story);
                         $product->setPrice($price);
                         $em->flush();
-                        return $this->render('assessmentOneBundle:conformation:index.html.twig',array('text'=>'All updated'));
+                        return $this->render('assessmentOneBundle:conformation:index.html.twig',array('text'=>'Cd updated'));
                     }
                 }
                 return $this->render('assessmentOneBundle:update:index.html.twig',array('form'=>$forms2->createView(),'text'=>$build));

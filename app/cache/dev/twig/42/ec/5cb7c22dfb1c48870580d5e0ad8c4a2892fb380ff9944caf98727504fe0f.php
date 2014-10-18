@@ -46,7 +46,7 @@ class __TwigTemplate_42ec5cb7c22dfb1c48870580d5e0ad8c4a2892fb380ff9944caf9872750
     {
         // line 10
         echo "
-
+<li><img src=\"https://cdn3.iconfinder.com/data/icons/ballicons-free/128/speakers.png\" width=\"50px\" height=\"50px\"></li>
     <li> <a href=\"/update\">update</a></li>
     <li>  <a href=\"/add\">add</a></li>
     <li>  <a href=\"/delete\">delete</a></li>
@@ -63,45 +63,48 @@ class __TwigTemplate_42ec5cb7c22dfb1c48870580d5e0ad8c4a2892fb380ff9944caf9872750
     {
         // line 23
         echo "
+
     ";
-        // line 24
+        // line 25
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["id"]) ? $context["id"] : $this->getContext($context, "id")));
         foreach ($context['_seq'] as $context["_key"] => $context["new"]) {
-            // line 25
-            echo "        <div id=\"views\">
-        <img id=\"cover\"src=\"https://cdn2.iconfinder.com/data/icons/metro-ui-dock/128/CD.png\" width=\"200px\" height=\"200px\">
-        <ul id=\"info\">
+            // line 26
+            echo "        <tr>
 
-            <li id=\"id\"> Id : ";
-            // line 29
+            <td>";
+            // line 28
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "id"), "html", null, true);
-            echo "</li>
+            echo "</td>
 
-            <li id=\"name\"> Name : ";
-            // line 31
+            <td>";
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "name"), "html", null, true);
-            echo "</li>
-            <li id=\"song\">Song : ";
-            // line 32
+            echo "</td>
+            <td>";
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "song"), "html", null, true);
-            echo "</li>
-            <li id=story\"\">Story : ";
-            // line 33
+            echo "</td>
+            <td>";
+            // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "story"), "html", null, true);
-            echo "</li>
+            echo "</td>
 
-            <li id=\"price\">Price : &#8364; ";
-            // line 35
+            <td>&#8364; ";
+            // line 34
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["new"]) ? $context["new"] : $this->getContext($context, "new")), "price"), "html", null, true);
-            echo "</li>
-        </ul>
-        </div>
+            echo "</td>
+        </tr>
+
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['new'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 38
+        echo "
+
+";
     }
 
     public function getTemplateName()
@@ -116,6 +119,6 @@ class __TwigTemplate_42ec5cb7c22dfb1c48870580d5e0ad8c4a2892fb380ff9944caf9872750
 
     public function getDebugInfo()
     {
-        return array (  96 => 35,  91 => 33,  87 => 32,  83 => 31,  78 => 29,  72 => 25,  68 => 24,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
+        return array (  105 => 38,  95 => 34,  90 => 32,  86 => 31,  82 => 30,  77 => 28,  73 => 26,  69 => 25,  65 => 23,  62 => 22,  48 => 10,  45 => 9,  40 => 6,  37 => 5,  31 => 2,);
     }
 }

@@ -11,8 +11,8 @@ class __TwigTemplate_977e29226aa307681edbb054fe9e8708ae2d0e908f793bfd46f9bc078de
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'header' => array($this, 'block_header'),
             'nav' => array($this, 'block_nav'),
+            'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
         );
@@ -42,30 +42,37 @@ class __TwigTemplate_977e29226aa307681edbb054fe9e8708ae2d0e908f793bfd46f9bc078de
 
 </head>
 <body>
-<div id=\"header\">   ";
-        // line 13
-        $this->displayBlock('header', $context, $blocks);
-        echo " </div>
+
 
 <div id=\"nav\"><ul id=\"menu\">";
         // line 15
         $this->displayBlock('nav', $context, $blocks);
         echo "</ul> </div>
 
-
+<div id=\"header\">   ";
+        // line 17
+        $this->displayBlock('header', $context, $blocks);
+        echo " </div>
     <div id=\"wrapper2\">
-
+        <table style=\"width:100%\">
+            <tr>
+                <th>ID</th>
+                <th>Artist</th>
+                <th>Song</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
         ";
-        // line 20
+        // line 27
         $this->displayBlock('body', $context, $blocks);
-        // line 33
-        echo "
+        // line 40
+        echo "</table>
     </div>
 
 ";
-        // line 36
+        // line 43
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 37
+        // line 44
         echo "</body>
 </html>
 ";
@@ -77,22 +84,22 @@ class __TwigTemplate_977e29226aa307681edbb054fe9e8708ae2d0e908f793bfd46f9bc078de
         echo "Welcome!";
     }
 
-    // line 13
-    public function block_header($context, array $blocks = array())
-    {
-        echo " ";
-    }
-
     // line 15
     public function block_nav($context, array $blocks = array())
     {
         echo " ";
     }
 
-    // line 20
+    // line 17
+    public function block_header($context, array $blocks = array())
+    {
+        echo " ";
+    }
+
+    // line 27
     public function block_body($context, array $blocks = array())
     {
-        // line 21
+        // line 28
         echo "
 
 
@@ -107,7 +114,7 @@ class __TwigTemplate_977e29226aa307681edbb054fe9e8708ae2d0e908f793bfd46f9bc078de
         ";
     }
 
-    // line 36
+    // line 43
     public function block_javascripts($context, array $blocks = array())
     {
     }
@@ -124,6 +131,6 @@ class __TwigTemplate_977e29226aa307681edbb054fe9e8708ae2d0e908f793bfd46f9bc078de
 
     public function getDebugInfo()
     {
-        return array (  111 => 36,  96 => 21,  93 => 20,  87 => 15,  81 => 13,  75 => 5,  69 => 37,  67 => 36,  62 => 33,  60 => 20,  52 => 15,  47 => 13,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  118 => 43,  103 => 28,  100 => 27,  94 => 17,  88 => 15,  82 => 5,  76 => 44,  74 => 43,  69 => 40,  67 => 27,  54 => 17,  49 => 15,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
     }
 }

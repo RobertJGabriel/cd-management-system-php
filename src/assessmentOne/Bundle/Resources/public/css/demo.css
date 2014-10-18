@@ -60,11 +60,8 @@ body {
     line-height: 60px;
     font-size: 22px;
 
+    color: #5677fc;
 }
-#menu>li>a{
-    text-decoration: none;
-}
-
 #wrapper{
 
     margin-left: auto;
@@ -85,11 +82,26 @@ body {
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
-#views{
 
 
+table{
+
+    background-color: green;
+    width: 100%;
+height: 500px;
 
 }
+td{
+
+   background-color: blue;
+}
+tr{
+    height: 50px;
+    background-color: red;
+    border-bottom: 2px solid red;
+
+}
+
 #views>li{
 
     list-style: none;

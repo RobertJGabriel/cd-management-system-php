@@ -20,50 +20,108 @@ body {
 #header{
     padding: 0;
     width: 100%;
-    background-color:#ff5722;
-    height: 200px;
-background-image: url(http://www.weebly.com/editor/uploads/6/0/3/3/603320/custom_themes/918726159630797610/files/download.png);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    height: 60px;margin-bottom: 30px;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
 }
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+    }
+    80% {
+        -webkit-transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
 #header>h1{
-    line-height: 200px;
+    line-height: 60px;
     padding: 0;
     margin:0;
-    color: white;
+    color: #B8B8B8;
+    font-size: 1.4em;
     text-align: center;
 
 }
 #nav{
     width: 100%;
-    height: 50px;
-    background-color: #EAEAEA;
-    margin-bottom: 30px;
+    height: 90px;
+    background-color: #ffffff;
+
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-#menu{
 
+#menu{
     list-style: none;
     padding: 0;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    height: 60px;
+    width: 600px;
+    height: 90px;
 
 }#menu>li{
-     line-height: 50px;
-     height: 60px;
+     line-height: 90px;
+     height: 90px;
      float: left;
-     margin-left: 75px;
+     margin-left: 60px;
  }
-#menu>li>a{
-    line-height: 50px;
-    font-size: 16px;
 
+
+#menu>li>img:first-child {
+   width: 50px;
+    margin-top: 20px;
+
+    padding: 4px;
+    height: 50px;
+    border-radius: 50px;
 }
+
+
 #menu>li>a{
+    line-height: 90px;
+    font-size: 16px;
     text-decoration: none;
+    color: #e51c23;
+}
+#menu>li>a:hover{
+color: #0091ea;
 }
 
 #wrapper{
@@ -71,8 +129,8 @@ background-image: url(http://www.weebly.com/editor/uploads/6/0/3/3/603320/custom
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-
-    height: auto;
+background-color: #FFFFFF;
+    height: 500px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 #wrapper2{
@@ -83,12 +141,13 @@ min-height: 400px;
 height: auto;
 }
 #class{
-
+background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding:20px;
 width: 200px;
-   height: 200px;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+   height: auto;
+margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -134,7 +193,7 @@ input[type=text]{
 border-radius: 2px;
 }
 
-button[type=submit]{
+button[type=submit],button{
     margin-top: 20px;
 background-color: #3F51B5;
     border: 1px solid #3F51B5;
@@ -143,9 +202,14 @@ background-color: #3F51B5;
     width: 200px;
     color: white;
 
+
+}
+button:hover>a,button>a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
-button[type=submit]:hover{
+button[type=submit]:hover,button:hover{
 
 background-color: #0091EA;
 cursor: pointer;
@@ -157,5 +221,26 @@ cursor: pointer;
     height: 200px;
     background-color: red;
 float: left;
+
+}
+
+
+
+td{
+text-align: center;
+    height: 50px;
+    border-bottom: 2px solid #ebebeb;
+
+}
+th{
+    background-color: #ebebeb;
+
+
+}
+table{
+
+}
+
+tr{
 
 }
