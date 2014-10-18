@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link href="{{ asset('bundles/acmedemo/css/demo.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+
+
+</head>
+<body>
+
+
+<div id="nav"><ul id="menu">{% block nav %} {% endblock %}</ul> </div>
+
+<div id="header">   {% block header %} {% endblock %} </div>
+<div id="wrapper2">
+    <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>Artist</th>
+            <th>Song</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        {% block body %}
+
+
+
+
+
+
+
+
+
+
+
+        {% endblock %}
+    </table>
+</div>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>
