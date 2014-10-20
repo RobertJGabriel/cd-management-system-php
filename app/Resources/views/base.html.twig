@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link href="{{ asset('bundles/acmedemo/css/demo.css') }}" rel="stylesheet" type="text/css" />
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <title>{% block title %}Welcomwwwe!{% endblock %}</title>
+        {% stylesheets 'main.css' %}
+        <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
+        {% endstylesheets %}    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
 
 

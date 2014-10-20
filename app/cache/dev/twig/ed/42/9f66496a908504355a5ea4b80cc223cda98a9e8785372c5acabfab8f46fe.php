@@ -31,7 +31,7 @@ class __TwigTemplate_ed429f66496a908504355a5ea4b80cc223cda98a9e8785372c5acabfab8
         echo "</title>
     <link href=\"";
         // line 6
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedemo/css/demo.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/assessmentOne/css/demo.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
     <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 7
@@ -73,7 +73,7 @@ class __TwigTemplate_ed429f66496a908504355a5ea4b80cc223cda98a9e8785372c5acabfab8
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        echo "ddgtfds";
+        echo "Welcome";
     }
 
     // line 15
@@ -123,6 +123,6 @@ class __TwigTemplate_ed429f66496a908504355a5ea4b80cc223cda98a9e8785372c5acabfab8
 
     public function getDebugInfo()
     {
-        return array (  110 => 35,  95 => 20,  92 => 19,  86 => 16,  80 => 15,  74 => 5,  68 => 36,  61 => 32,  59 => 19,  53 => 16,  49 => 15,  38 => 7,  34 => 6,  30 => 5,  24 => 1,  88 => 30,  83 => 28,  79 => 27,  75 => 26,  71 => 25,  66 => 35,  63 => 23,  58 => 20,  55 => 19,  40 => 7,  37 => 6,  31 => 2,);
+        return array (  110 => 35,  95 => 20,  92 => 19,  86 => 16,  80 => 15,  74 => 5,  68 => 36,  66 => 35,  61 => 32,  59 => 19,  53 => 16,  49 => 15,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
     }
 }

@@ -7,7 +7,7 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("::base.html.twig");
+        $this->parent = $this->env->loadTemplate("assessmentOneBundle:base:base.html.twig");
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
@@ -19,7 +19,7 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
 
     protected function doGetParent(array $context)
     {
-        return "::base.html.twig";
+        return "assessmentOneBundle:base:base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -56,7 +56,7 @@ class __TwigTemplate_ea780ff6f261f8c82b955979c6569382c4895f41c1ac71a18bd78e73020
     public function block_header($context, array $blocks = array())
     {
         // line 20
-        echo "       <h1>Welcome Admin</h1>
+        echo "       <h1>Welcome </h1>
    ";
     }
 

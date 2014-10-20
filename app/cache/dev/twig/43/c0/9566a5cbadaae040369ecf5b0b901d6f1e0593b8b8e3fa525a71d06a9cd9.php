@@ -31,7 +31,7 @@ class __TwigTemplate_43c09566a5cbadaae040369ecf5b0b901d6f1e0593b8b8e3fa525a71d06
         echo "</title>
     <link href=\"";
         // line 6
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedemo/css/demo.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/assessmentone/css/demo.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
     <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 7
@@ -81,7 +81,7 @@ class __TwigTemplate_43c09566a5cbadaae040369ecf5b0b901d6f1e0593b8b8e3fa525a71d06
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        echo "Welcome!";
+        echo "View Tables";
     }
 
     // line 15

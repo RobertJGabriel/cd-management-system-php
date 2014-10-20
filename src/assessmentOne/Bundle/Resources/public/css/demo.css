@@ -20,115 +20,227 @@ body {
 #header{
     padding: 0;
     width: 100%;
-    background-color:#673ab7;
-    height: 100px;
+    height: 60px;margin-bottom: 30px;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
 
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
 }
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+    }
+    80% {
+        -webkit-transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
 #header>h1{
-    line-height: 100px;
+    line-height: 60px;
     padding: 0;
     margin:0;
+    color: #B8B8B8;
+    font-size: 1.4em;
     text-align: center;
 
 }
 #nav{
     width: 100%;
-    height: 60px;
-    background-color: #EAEAEA;
-    margin-bottom: 30px;
+    height: 90px;
+    background-color: #ffffff;
+
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-#menu{
 
+#menu{
     list-style: none;
     padding: 0;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    height: 60px;
+    height: 90px;
 
 }#menu>li{
-     line-height: 60px;
-     height: 60px;
+     line-height: 90px;
+     height: 90px;
      float: left;
-     margin-left: 75px;
+     margin-left: 60px;
  }
-#menu>li>a{
-    line-height: 60px;
-    font-size: 22px;
 
-    color: #5677fc;
+
+#menu>li>img:first-child {
+    width: 50px;
+    margin-top: 20px;
+
+    padding: 4px;
+    height: 50px;
+    border-radius: 50px;
 }
+
+
+#menu>li>a{
+    line-height: 90px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e51c23;
+}
+#menu>li>a:hover{
+    color: #0091ea;
+}
+
 #wrapper{
 
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    min-height: 400px;
-    height: auto;
-    background-color: white;
+    background-color: #FFFFFF;
+    height: 500px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
-
-#class{
-
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-}
-
-
-
-table{
-
-    background-color: green;
-    width: 100%;
-height: 500px;
-
-}
-td{
-
-   background-color: blue;
-}
-tr{
-    height: 50px;
-    background-color: red;
-    border-bottom: 2px solid red;
-
-}
-
-#views>li{
-
-    list-style: none;
-}
-#views>li>ul{
-
+#wrapper2{
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 600px;
     min-height: 400px;
     height: auto;
-    background-color: white;
+}
+#class{
+    background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding:20px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
-    margin-bottom: 20px;
-    margin-top: 20px;
+
+#views{
+    margin-top: 60px;
+    width: 500px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 60px;
+
+}
+#info{
+    float: left;
+    width: 200px;
+    height: 400px;
+
+    margin-top: -0px;
+}
+#info>li{
+
     list-style: none;
 }
-#views>li>ul>li{
+
+#info>li{
     margin-top: 30px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     width: 190px;
 
     padding: 0;
     height: 20px;
     margin-bottom: 10px;
+
+}
+
+input[type=text]{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #DADADA;
+    border-radius: 2px;
+}
+
+button[type=submit],button{
+    margin-top: 20px;
+    background-color: #3F51B5;
+    border: 1px solid #3F51B5;
+    border-radius: 3px;
+    height: 50px;
+    width: 200px;
+    color: white;
+
+
+}
+button:hover>a,button>a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button[type=submit]:hover,button:hover{
+
+    background-color: #0091EA;
+    cursor: pointer;
+}
+
+
+#cover{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+
+}
+
+
+
+td{
+    text-align: center;
+    height: 50px;
+    border-bottom: 2px solid #ebebeb;
+
+}
+th{
+    background-color: #ebebeb;
+
+
+}
+table{
+
+}
+
+tr{
 
 }
