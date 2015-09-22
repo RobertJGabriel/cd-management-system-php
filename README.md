@@ -1,6 +1,11 @@
-Symfony Standard Edition
-========================
 
+
+
+![alt text](https://symfony.com/images/v5/opengraph/symfony_logo.png "Logo Title Text 1")
+
+#About 
+========================
+This is a crud example using symfony2. This was for college and people might like it or not :)
 Welcome to the Symfony Standard Edition - a fully-functional Symfony2
 application that you can use as the skeleton for your new applications.
 
@@ -8,7 +13,9 @@ This document contains information on how to download, install, and start
 using Symfony. For a more detailed explanation, see the [Installation][1]
 chapter of the Symfony Documentation.
 
-1) Installing the Standard Edition
+
+#Set Up
+## Installing the Standard Edition
 ----------------------------------
 
 When it comes to installing the Symfony Standard Edition, you have the
